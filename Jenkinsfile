@@ -11,7 +11,10 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t devops-flask-app:2.0 .'
+                sh '''
+                eval $(minikube docker-env)
+                docker build -t devops-flask-app:3.0 .
+                '''
             }
         }
 

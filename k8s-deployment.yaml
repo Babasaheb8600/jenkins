@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: devops-flask-app:2.0
+        image: devops-flask-app:3.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
