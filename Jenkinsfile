@@ -5,7 +5,11 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
+<<<<<<< HEAD
                 git branch: 'main', url: 'https://github.com/Babasaheb8600/jenkins.git'
+=======
+                git 'https://github.com/Babasaheb8600/jenkins.git'
+>>>>>>> 0a54a38 (webhook test)
             }
         }
 
